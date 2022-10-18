@@ -1,0 +1,17 @@
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\bin\Debug\net6.0\ToDoAppNTier.DataAccess.deps.json
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\bin\Debug\net6.0\ToDoAppNTier.DataAccess.dll
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\bin\Debug\net6.0\ToDoAppNTier.DataAccess.pdb
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\bin\Debug\net6.0\ToDoAppNTier.Entities.dll
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\bin\Debug\net6.0\ToDoAppNTier.Entities.pdb
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\ToDoAppNTier.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\ToDoAppNTier.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\ToDoAppNTier.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\ToDoAppNTier.DataAccess.AssemblyInfo.cs
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\ToDoAppNTier.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\ToDoAppNTier.DataAccess.csproj.CopyComplete
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\ToDoAppNTier.DataAccess.dll
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\refint\ToDoAppNTier.DataAccess.dll
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\ToDoAppNTier.DataAccess.pdb
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\ref\ToDoAppNTier.DataAccess.dll
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\bin\Debug\net6.0\ToDoAppNTier.DataAccess.runtimeconfig.json
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.DataAccess\obj\Debug\net6.0\ToDoAppNTier.DataAccess.genruntimeconfig.cache

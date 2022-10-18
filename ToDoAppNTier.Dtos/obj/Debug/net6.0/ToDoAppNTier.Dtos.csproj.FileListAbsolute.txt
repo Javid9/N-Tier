@@ -1,0 +1,12 @@
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\bin\Debug\net6.0\ToDoAppNTier.Dtos.deps.json
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\bin\Debug\net6.0\ToDoAppNTier.Dtos.dll
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\bin\Debug\net6.0\ToDoAppNTier.Dtos.pdb
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\obj\Debug\net6.0\ToDoAppNTier.Dtos.csproj.AssemblyReference.cache
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\obj\Debug\net6.0\ToDoAppNTier.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\obj\Debug\net6.0\ToDoAppNTier.Dtos.AssemblyInfoInputs.cache
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\obj\Debug\net6.0\ToDoAppNTier.Dtos.AssemblyInfo.cs
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\obj\Debug\net6.0\ToDoAppNTier.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\obj\Debug\net6.0\ToDoAppNTier.Dtos.dll
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\obj\Debug\net6.0\refint\ToDoAppNTier.Dtos.dll
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\obj\Debug\net6.0\ToDoAppNTier.Dtos.pdb
+C:\Users\Cavid\source\repos\toDoAppNTier\ToDoAppNTier.Dtos\obj\Debug\net6.0\ref\ToDoAppNTier.Dtos.dll

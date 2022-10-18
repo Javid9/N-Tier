@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yPojcNMJ6LjzSq3J7gw6QhG4opd2OdW2rmLwCfXmgOA=",
+  "Source": "toDoAppNTier.UI",
+  "BasePath": "_content/toDoAppNTier.UI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
