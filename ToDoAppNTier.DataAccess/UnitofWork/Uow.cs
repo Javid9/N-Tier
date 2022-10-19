@@ -1,6 +1,7 @@
 ﻿using ToDoAppNTier.DataAccess.Contexts;
 using ToDoAppNTier.DataAccess.Interfaces;
 using ToDoAppNTier.DataAccess.Repositories;
+using ToDoAppNTier.Entities.Domains;
 
 namespace ToDoAppNTier.DataAccess.UnitofWork;
 
@@ -14,7 +15,7 @@ public class Uow: IUow
     }
     
 
-    public IRepository<T> GetRepository<T>() where T : class, new()
+    public IRepository<T> GetRepository<T>() where T : BaseEntity
     {
         return new Repository<T>(_context);
     }

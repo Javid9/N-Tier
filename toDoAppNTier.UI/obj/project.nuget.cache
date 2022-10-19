@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RgsmaZWXzOZBzer55xpuGFsGhptQ7rezbvA/1ALgwVlRFR81Z93JAUO28kFNFEnyCRCQAUH+IcylEm2GabRJqQ==",
+  "dgSpecHash": "NA2rmVBlC4D5pOF8ZPDARgC7vWHO7lhYL4j/1vfYUIydUyME4kPhebYiS/T6fBTejnug4Qttf8bokIJTwlgmoQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\toDoAppNTier.UI\\toDoAppNTier.UI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Cavid\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Cavid\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Cavid\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Cavid\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Cavid\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Cavid\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",

@@ -1,8 +1,9 @@
 ﻿using System.Linq.Expressions;
+using ToDoAppNTier.Entities.Domains;
 
 namespace ToDoAppNTier.DataAccess.Interfaces;
 
-public interface IRepository<T> where T: class, new()
+public interface IRepository<T> where T: BaseEntity
 {
     Task<List<T>> GetAll();
     Task<T> GetById(object id);
@@ -10,7 +11,7 @@ public interface IRepository<T> where T: class, new()
     IQueryable<T> GetQuery();
     Task Create(T entity);
     void Update(T entity);
-    void Remove(T entity);
+    void Remove(object id);
     
 
 }

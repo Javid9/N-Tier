@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OSG7GINVXEIk1Bd3tcM7ETpHGAYgwMCxH4efS+N4qPntJCZH10uqK2+F9F5lnHQ09ZsHzFIZt5OZ976xeFHhzg==",
+  "dgSpecHash": "/ZEelnSVYVXjXgVvCYEur9zu9VXi/Yu+GJR7uX2SR1GluLbWnHFrHit/+NS44gLs6o9ls8uN6SBciTuKaTXJzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.Business\\ToDoAppNTier.Business.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Cavid\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Cavid\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Cavid\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Cavid\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Cavid\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",

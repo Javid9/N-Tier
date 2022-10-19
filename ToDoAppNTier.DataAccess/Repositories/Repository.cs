@@ -2,10 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using ToDoAppNTier.DataAccess.Contexts;
 using ToDoAppNTier.DataAccess.Interfaces;
+using ToDoAppNTier.Entities.Domains;
 
 namespace ToDoAppNTier.DataAccess.Repositories;
 
-public class Repository<T> : IRepository<T> where T : class, new()
+public class Repository<T> : IRepository<T> where T : BaseEntity
 {
     private readonly TodoContext _context;
 
@@ -23,14 +24,15 @@ public class Repository<T> : IRepository<T> where T : class, new()
 
     public async Task<T> GetById(object id)
     {
-        return await _context.Set<T>().FindAsync(id);
+        return (await _context.Set<T>().FindAsync(id))!;
     }
 
+    
     public async Task<T> GetByFilter(Expression<Func<T, bool>> filter, bool asNoTracking = false)
     {
-        return asNoTracking
+        return (asNoTracking
             ? await _context.Set<T>().SingleOrDefaultAsync(filter)
-            : await _context.Set<T>().AsNoTracking().SingleOrDefaultAsync(filter);
+            : await _context.Set<T>().AsNoTracking().SingleOrDefaultAsync(filter))!;
     }
 
     public IQueryable<T> GetQuery()
@@ -45,12 +47,13 @@ public class Repository<T> : IRepository<T> where T : class, new()
 
     public void Update(T entity)
     {
-
-        _context.Set<T>().Update(entity);
+        var updateEntity = _context.Set<T>().Find(entity.Id);
+        _context.Entry(updateEntity).CurrentValues.SetValues(entity);
     }
 
-    public void Remove(T entity)
+    public void Remove(object id)
     {
-        _context.Set<T>().Remove(entity);
+         var deletedEntity = _context.Set<T>().Find(id);
+         _context.Set<T>().Remove(deletedEntity);
     }
 }
