@@ -22,7 +22,7 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
         return await _context.Set<T>().AsNoTracking().ToListAsync();
     }
 
-    public async Task<T> GetById(object id)
+    public async Task<T> Find(object id)
     {
         return (await _context.Set<T>().FindAsync(id))!;
     }
@@ -45,15 +45,16 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
         await _context.Set<T>().AddAsync(entity);
     }
 
-    public void Update(T entity)
+    public void Update(T entity, T unchanged)
     {
-        var updateEntity = _context.Set<T>().Find(entity.Id);
-        _context.Entry(updateEntity).CurrentValues.SetValues(entity);
+        _context.Entry(unchanged).CurrentValues.SetValues(entity);
     }
+    
 
-    public void Remove(object id)
+    public void Remove(T entity)
     {
-         var deletedEntity = _context.Set<T>().Find(id);
-         _context.Set<T>().Remove(deletedEntity);
+        _context.Set<T>().Remove(entity);
     }
+    
+    
 }

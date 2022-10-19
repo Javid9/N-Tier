@@ -67,3 +67,5 @@ C:\Users\Cavid\source\repos\toDoAppNTier\toDoAppNTier.UI\obj\Debug\net6.0\toDoAp
 C:\Users\Cavid\source\repos\toDoAppNTier\toDoAppNTier.UI\obj\Debug\net6.0\toDoAppNTier.UI.RazorAssemblyInfo.cs
 C:\Users\Cavid\source\repos\toDoAppNTier\toDoAppNTier.UI\bin\Debug\net6.0\package-lock.json
 C:\Users\Cavid\source\repos\toDoAppNTier\toDoAppNTier.UI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Cavid\source\repos\toDoAppNTier\toDoAppNTier.UI\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Cavid\source\repos\toDoAppNTier\toDoAppNTier.UI\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

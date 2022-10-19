@@ -1,5 +1,8 @@
 ﻿using AutoMapper;
+using FluentValidation;
+using ToDoAppNTier.Business.ValidationRules;
 using ToDoAppNTier.DataAccess.UnitofWork;
+using ToDoAppNTier.Dtos.Interfaces;
 using ToDoAppNTier.Dtos.WorkDtos;
 using ToDoAppNTier.Entities.Domains;
 
@@ -9,11 +12,16 @@ public class WorkService: IWorkService
 {
     private readonly IUow _uow;
     private readonly IMapper _mapper;
-    public WorkService(IUow uow, IMapper mapper)
+    private readonly IValidator<WorkCreateDto> _createDtoValidator;
+    private readonly IValidator<WorkUpdateDto> _updateDtoValidator;
+    public WorkService(IUow uow, IMapper mapper, IValidator<WorkCreateDto> createDtoValidator, IValidator<WorkUpdateDto> updateDtoValidator)
     {
         _uow = uow;
         _mapper = mapper;
+        _createDtoValidator = createDtoValidator;
+        _updateDtoValidator = updateDtoValidator;
     }
+    
     
     // Get All
     public async Task<List<WorkListDto>> GetAll()
@@ -23,28 +31,41 @@ public class WorkService: IWorkService
     
     
     // GetById
-    public async Task<WorkListDto> GetById(int id)
+    public async Task<IDto> GetById<IDto>(int id)
     {
-       return _mapper.Map<WorkListDto>(await _uow.GetRepository<Work>().GetByFilter(x=>x.Id==id));
+       return _mapper.Map<IDto>(await _uow.GetRepository<Work>().GetByFilter(x => x.Id == id));
     }
+    
     
     
     
    // Create
     public async Task Create(WorkCreateDto dto)
     {
-        await _uow.GetRepository<Work>().Create(_mapper.Map<Work>(dto));
-
-       await _uow.SaveChanges();
+        var validationResult = _createDtoValidator.Validate(dto);
+        if (validationResult.IsValid)
+        {
+            await _uow.GetRepository<Work>().Create(_mapper.Map<Work>(dto));
+            await _uow.SaveChanges();
+        }
     }
 
-    
-    
+  
+
+
     //Update
     public async Task Update(WorkUpdateDto dto)
     {
-        _uow.GetRepository<Work>().Update(_mapper.Map<Work>(dto));
-        await _uow.SaveChanges();
+        var validationResult = _updateDtoValidator.Validate(dto);
+        if (validationResult.IsValid)
+        {
+            var updateEntity = await _uow.GetRepository<Work>().Find(dto.Id);
+            if (updateEntity != null)
+            {
+                _uow.GetRepository<Work>().Update(_mapper.Map<Work>(dto),updateEntity);
+                await _uow.SaveChanges();
+            }
+        }
 
     }
     
@@ -53,8 +74,13 @@ public class WorkService: IWorkService
     // Remove
     public async Task Remove(int id)
     {
-        _uow.GetRepository<Work>().Remove(id);
-        await _uow.SaveChanges();
+      var removeEntity = await _uow.GetRepository<Work>().GetByFilter(x=>x.Id==id);
+      if (removeEntity != null)
+      {
+         _uow.GetRepository<Work>().Remove(removeEntity);
+          await _uow.SaveChanges();
+      }
+       
     }
     
     
