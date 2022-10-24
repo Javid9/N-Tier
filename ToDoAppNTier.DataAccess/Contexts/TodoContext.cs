@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using ToDoAppNTier.DataAccess.Configurations;
 using ToDoAppNTier.Entities.Domains;
 
@@ -14,6 +15,7 @@ public class TodoContext : DbContext
     {
         modelBuilder.ApplyConfiguration(new WorkConfiguration());
     }
+    
 
 
     public DbSet<Work> Works { get; set; } = null!;

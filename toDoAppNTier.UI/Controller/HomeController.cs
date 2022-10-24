@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using ToDoAppNTier.Business.Interfaces;
 using ToDoAppNTier.Business.Services;
 using ToDoAppNTier.Dtos.WorkDtos;
 
@@ -16,14 +17,13 @@ public class HomeController : Microsoft.AspNetCore.Mvc.Controller
     
     public async Task<IActionResult> Index()
     {
-        var workList = await _workService.GetAll();
-        return View(workList);
+     
+        return View( await _workService.GetAll());
     }
 
     
-    
-    
-    public async Task<IActionResult> Create()
+
+        public async Task<IActionResult> Create()
     {
         return View(new WorkCreateDto());
     }

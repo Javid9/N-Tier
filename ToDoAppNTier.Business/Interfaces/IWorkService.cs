@@ -1,7 +1,8 @@
-﻿using ToDoAppNTier.Dtos.Interfaces;
+﻿using Common.ResponseObjects;
+using RepositoryDemo.Results;
 using ToDoAppNTier.Dtos.WorkDtos;
 
-namespace ToDoAppNTier.Business.Services;
+namespace ToDoAppNTier.Business.Interfaces;
 
 public interface IWorkService
 {

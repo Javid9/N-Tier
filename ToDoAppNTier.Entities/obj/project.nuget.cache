@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dwLCTfLISAk4uuWZiTYsyboquRNshXf30Jdz/+0OqdQ7OaepAZVTwD595aHpfQgWfuy2m1mhyj+I5kcEuoeHTQ==",
+  "dgSpecHash": "subFN7MQDuGaBUbmH67XRLEh7pQYHjq2UvG41eb+EOFVy5w4hktSeWWQINtzuZ5utahYyJyDHCYpfEw8lvJ3Ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.Entities\\ToDoAppNTier.Entities.csproj",
+  "projectFilePath": "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.Entities/ToDoAppNTier.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

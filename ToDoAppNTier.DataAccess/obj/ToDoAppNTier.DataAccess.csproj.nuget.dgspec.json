@@ -1,38 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.DataAccess\\ToDoAppNTier.DataAccess.csproj": {}
+    "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.DataAccess/ToDoAppNTier.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.DataAccess\\ToDoAppNTier.DataAccess.csproj": {
+    "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.DataAccess/ToDoAppNTier.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.DataAccess\\ToDoAppNTier.DataAccess.csproj",
+        "projectUniqueName": "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.DataAccess/ToDoAppNTier.DataAccess.csproj",
         "projectName": "ToDoAppNTier.DataAccess",
-        "projectPath": "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.DataAccess\\ToDoAppNTier.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Cavid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.DataAccess\\obj\\",
+        "projectPath": "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.DataAccess/ToDoAppNTier.DataAccess.csproj",
+        "packagesPath": "/Users/javiddadashov/.nuget/packages/",
+        "outputPath": "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.DataAccess/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Cavid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/javiddadashov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.Entities\\ToDoAppNTier.Entities.csproj": {
-                "projectPath": "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.Entities\\ToDoAppNTier.Entities.csproj"
+              "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.Entities/ToDoAppNTier.Entities.csproj": {
+                "projectPath": "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.Entities/ToDoAppNTier.Entities.csproj"
               }
             }
           }
@@ -78,31 +73,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.Entities\\ToDoAppNTier.Entities.csproj": {
+    "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.Entities/ToDoAppNTier.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.Entities\\ToDoAppNTier.Entities.csproj",
+        "projectUniqueName": "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.Entities/ToDoAppNTier.Entities.csproj",
         "projectName": "ToDoAppNTier.Entities",
-        "projectPath": "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.Entities\\ToDoAppNTier.Entities.csproj",
-        "packagesPath": "C:\\Users\\Cavid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cavid\\source\\repos\\toDoAppNTier\\ToDoAppNTier.Entities\\obj\\",
+        "projectPath": "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.Entities/ToDoAppNTier.Entities.csproj",
+        "packagesPath": "/Users/javiddadashov/.nuget/packages/",
+        "outputPath": "/Users/javiddadashov/Desktop/Boom/Code/Asp/N-Tier/ToDoAppNTier.Entities/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Cavid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/javiddadashov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -136,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }

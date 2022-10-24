@@ -3,13 +3,13 @@ using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ToDoAppNTier.Business.Interfaces;
 using ToDoAppNTier.Business.Mappings.AutoMapper;
 using ToDoAppNTier.Business.Services;
 using ToDoAppNTier.Business.ValidationRules;
 using ToDoAppNTier.DataAccess.Contexts;
 using ToDoAppNTier.DataAccess.UnitofWork;
 using ToDoAppNTier.Dtos.WorkDtos;
-using ToDoAppNTier.Entities.Domains;
 
 namespace ToDoAppNTier.Business.DependencyResolvers.Microsoft;
 
@@ -19,7 +19,7 @@ public static class DependencyExtension
     {
         services.AddDbContext<TodoContext>(opt =>
         {
-            opt.UseSqlServer("Server=DESKTOP-NP0SP3H\\SQLEXPRESS;Initial Catalog=toDoNTier;Integrated Security=sspi;");
+            opt.UseSqlServer("Data Source=localhost; Initial Catalog=toDoNTier; User Id=sa; Password=123456@cavid;");
             opt.LogTo(Console.WriteLine, LogLevel.Information);
         });
 
@@ -37,6 +37,4 @@ public static class DependencyExtension
         services.AddTransient<IValidator<WorkCreateDto>, WorkCreateDtoValidator>();
         services.AddTransient<IValidator<WorkUpdateDto>, WorkUpdateDtoValidator>();
     }
-    
-    
 }

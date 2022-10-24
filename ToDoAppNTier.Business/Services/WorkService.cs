@@ -1,5 +1,9 @@
 ﻿using AutoMapper;
+using Common.ResponseObjects;
 using FluentValidation;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using RepositoryDemo.Results;
+using ToDoAppNTier.Business.Interfaces;
 using ToDoAppNTier.Business.ValidationRules;
 using ToDoAppNTier.DataAccess.UnitofWork;
 using ToDoAppNTier.Dtos.Interfaces;
@@ -26,28 +30,30 @@ public class WorkService: IWorkService
     // Get All
     public async Task<List<WorkListDto>> GetAll()
     {
-        return _mapper.Map<List<WorkListDto>>(await _uow.GetRepository<Work>().GetAll());
+       return _mapper.Map<List<WorkListDto>>(await _uow.GetRepository<Work>().GetAll());
     }
+    
+    
     
     
     // GetById
     public async Task<IDto> GetById<IDto>(int id)
     {
-       return _mapper.Map<IDto>(await _uow.GetRepository<Work>().GetByFilter(x => x.Id == id));
+        return _mapper.Map<IDto>(await _uow.GetRepository<Work>().GetByFilter(x => x.Id == id));
     }
-    
-    
-    
-    
-   // Create
+
+
+
+    // Create
     public async Task Create(WorkCreateDto dto)
     {
         var validationResult = _createDtoValidator.Validate(dto);
         if (validationResult.IsValid)
         {
-            await _uow.GetRepository<Work>().Create(_mapper.Map<Work>(dto));
+             await _uow.GetRepository<Work>().Create(_mapper.Map<Work>(dto));
             await _uow.SaveChanges();
         }
+
     }
 
   
@@ -80,8 +86,8 @@ public class WorkService: IWorkService
          _uow.GetRepository<Work>().Remove(removeEntity);
           await _uow.SaveChanges();
       }
-       
     }
+    
     
     
     

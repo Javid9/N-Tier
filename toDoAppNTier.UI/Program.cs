@@ -10,12 +10,12 @@ services.AddControllersWithViews();
 
 
 var app = builder.Build();
-
-app.UseStaticFiles(new StaticFileOptions()
-{
-    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "node_modules")),
-    RequestPath = "/node_modules"
-});
+//
+// app.UseStaticFiles(new StaticFileOptions()
+// {
+//     FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "node_modules")),
+//     RequestPath = "/node_modules"
+// });
 
 app.UseRouting();
 
